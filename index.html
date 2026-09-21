@@ -32,6 +32,16 @@ footer{background:#042c43;color:#d8f8ff;padding:45px 0;margin-top:30px;text-alig
 .quick-panel{position:fixed;right:18px;bottom:22px;z-index:1000}.quick-toggle{width:58px;height:58px;border:0;border-radius:50%;background:#063b5b;color:#fff;font-size:24px;box-shadow:0 10px 30px #063b5b45;cursor:pointer}.quick-menu{position:absolute;right:0;bottom:70px;width:245px;background:#fffffff7;backdrop-filter:blur(14px);border:1px solid #dff4f8;border-radius:22px;padding:14px;box-shadow:0 20px 50px #063b5b30;display:none}.quick-panel.open .quick-menu{display:flex;flex-direction:column}.quick-menu b{color:#063b5b;padding:8px 12px}.quick-menu a{color:#17495e;text-decoration:none;padding:11px 12px;border-radius:12px;font-weight:750}.quick-menu a:hover{background:#e9faff}.beach-tools{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin:0 auto 25px}.beach-tools input{width:min(420px,100%);padding:14px 18px;border:1px solid #ccebf1;border-radius:999px;font-size:16px;outline:none}.filter{border:0;border-radius:999px;padding:12px 17px;background:#e7f8fb;color:#087ea4;font-weight:850;cursor:pointer}.filter.active{background:#063b5b;color:#fff}.beach-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.beach-mini{display:grid;grid-template-columns:74px 1fr;gap:14px;background:#fff;border:1px solid #dff4f8;border-radius:20px;padding:15px;box-shadow:0 10px 30px #064b6710;transition:.2s}.beach-mini:hover{transform:translateY(-3px)}.wave-thumb{width:74px;height:74px;border-radius:16px;background:linear-gradient(145deg,#087ea4,#8eeeff);display:grid;place-items:center;font-size:31px}.beach-mini h3{margin:2px 0 7px;font:700 20px Georgia,serif;color:#063b5b}.beach-mini small{display:block;color:#6a8089;margin-bottom:8px}.beach-mini p{margin:0;color:#58707b;line-height:1.45;font-size:13px}.beach-mini .tag{margin:0 0 6px}.beach-mini.hidden{display:none}
 @media(max-width:900px){.beach-list{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.beach-list{grid-template-columns:1fr}.quick-panel{right:12px;bottom:14px}}
 </style>
+
+<style id="beach-detail-upgrade">
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+.beach-jump{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 24px}
+.beach-jump a{background:rgba(255,255,255,.9);border:1px solid rgba(0,70,120,.18);border-radius:999px;padding:8px 12px;color:#075b85;text-decoration:none;font-weight:700;font-size:.9rem}
+.beach-detail{scroll-margin-top:90px;margin-top:14px;padding:18px;border-radius:18px;background:linear-gradient(135deg,rgba(235,250,255,.92),rgba(255,255,255,.96));border:1px solid rgba(0,90,140,.12);box-shadow:0 8px 24px rgba(0,70,100,.07)}
+.beach-detail h3{margin:0 0 7px}.beach-detail .tag{display:inline-block;padding:4px 9px;border-radius:999px;background:#e0f5ff;color:#075b85;font-size:.78rem;font-weight:800}
+.beach-detail p{margin:10px 0;line-height:1.55}.jump-back{font-size:.85rem;text-decoration:none;color:#075b85;font-weight:700}
+</style>
+
 </head>
 <body>
 <header>
@@ -205,6 +215,251 @@ footer{background:#042c43;color:#d8f8ff;padding:45px 0;margin-top:30px;text-alig
 <div class="disclaimer">НЕ РЕКЛАМА. Информационный любительский сайт о пляжах Ниццы. Не является официальным представителем пляжей, ресторанов или города Ницца. Фото и материалы о Castel Plage ведут на официальный сайт пляжа; права на материалы принадлежат их соответствующим владельцам.</div>
 <div class="disclaimer">Список пляжей: Ville de Nice. Цены конкретных частных клубов указываются только по их первоисточникам. Live-камера: SeeNice. Точные условия и цены следует проверить перед посещением.</div>
 </div>
+
+<section id="all-beach-details" class="section beach-details-section">
+  <div class="section-heading">
+    <span class="eyebrow">ПОДРОБНО</span>
+    <h2>Все пляжи Ниццы</h2>
+    <p>Нажми на название — страница сразу прокрутится к нужному пляжу.</p>
+  </div>
+  <div class="beach-jump">
+<a href="#beach-reserve">Plage de la Réserve</a><a href="#beach-bains-militaires">Bains militaires</a><a href="#beach-castel">Castel Plage</a><a href="#beach-ponchettes">Plage des Ponchettes</a><a href="#beach-opera">Opéra Plage</a><a href="#beach-beau-rivage">Beau Rivage Plage</a><a href="#beach-centenaire">Plage du Centenaire</a><a href="#beach-ruhl">Ruhl Plage</a><a href="#beach-lido">Plage du Lido</a><a href="#beach-sporting">Plage du Sporting</a><a href="#beach-blue-beach">Blue Beach</a><a href="#beach-neptune">Plage du Neptune</a><a href="#beach-forum">Plage du Forum</a><a href="#beach-voilier">Plage du Voilier</a><a href="#beach-florida">Florida Plage</a><a href="#beach-poincare">Plage du Poincaré</a><a href="#beach-magnan">Plage de Magnan</a><a href="#beach-lenval">Plage de Lenval</a><a href="#beach-fabron">Fabron Plage</a><a href="#beach-sainte-helene">Plage Sainte-Hélène</a><a href="#beach-aubry-lecomte">Plage Aubry Lecomte</a><a href="#beach-carras">Plage de Carras</a><a href="#beach-lanterne">Plage de la Lanterne</a><a href="#beach-regence">Régence Plage</a><a href="#beach-canailles">Les Canailles Plage</a><a href="#beach-cocoon">Cocoon Beach</a><a href="#beach-vela">La Véla Plage</a><a href="#beach-hotel-amour">Hôtel Amour à la Plage</a><a href="#beach-n-plage">N la Plage (Negresco)</a><a href="#beach-blue-beach-plage">Blue Beach Plage</a><a href="#beach-temps-ete">Le Temps d’un Été Plage</a><a href="#beach-bocca-mar">Bocca Mar</a><a href="#beach-galet">Le Galet Plage</a></div>
+  <div class="beach-detail-list">
+
+    <article class="beach-detail" id="beach-reserve">
+      <span class="tag">Публичный</span>
+      <h3>Plage de la Réserve</h3>
+      <p>Пляж у порта и скалистой части Ниццы, рядом с бухтой и прибрежной зоной. Подходит для тех, кто хочет быть ближе к порту и менее центральной части набережной.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-bains-militaires">
+      <span class="tag">Публичный</span>
+      <h3>Bains militaires</h3>
+      <p>Участок побережья у восточной части центра Ниццы. Это более спокойная зона рядом с портом, удобная для купания и прогулок вдоль моря.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-castel">
+      <span class="tag">Концессия</span>
+      <h3>Castel Plage</h3>
+      <p>Один из самых известных пляжей Ниццы у подножия Замковой горы. Здесь есть ресторан, лежаки, зонты и обслуживание на пляже; официальный туристический офис указывает адрес 8 quai des États-Unis.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-ponchettes">
+      <span class="tag">Публичный</span>
+      <h3>Plage des Ponchettes</h3>
+      <p>Пляж в самом сердце Ниццы, между Старым городом и морем. Удобен для прогулки по набережной и быстрого доступа к историческому центру.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-opera">
+      <span class="tag">Публичный / концессия</span>
+      <h3>Opéra Plage</h3>
+      <p>Пляж рядом с Оперой и Старым городом. Это центральная зона на Promenade des Anglais с возможностью пляжного отдыха и услугами частной концессии.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-beau-rivage">
+      <span class="tag">Публичный / концессия</span>
+      <h3>Beau Rivage Plage</h3>
+      <p>Центральный пляж с двумя форматами отдыха: спокойная зона, ресторан, lounge-бар и место с матрасами. Туристический офис описывает его как пляж с рестораном, открытым круглый год.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-centenaire">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Centenaire</h3>
+      <p>Большой центральный пляж у начала Promenade des Anglais. Это также одна из адаптированных пляжей Nice: город указывает доступ для маломобильных посетителей, санитарные помещения и душевые.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-ruhl">
+      <span class="tag">Публичный / концессия</span>
+      <h3>Ruhl Plage</h3>
+      <p>Центральный пляж рядом с площадью Масена и отелями на набережной. Подходит для классического отдыха у моря в самом центре города.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-lido">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Lido</h3>
+      <p>Пляж в центральной части Promenade des Anglais. Хороший вариант для тех, кто хочет совместить море с прогулкой по набережной и близостью к центру.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-sporting">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Sporting</h3>
+      <p>Центральный участок побережья на Promenade des Anglais. Здесь удобно совместить пляжный отдых с прогулкой по главной набережной Ниццы.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-blue-beach">
+      <span class="tag">Публичный / концессия</span>
+      <h3>Blue Beach</h3>
+      <p>Пляж-ресторан напротив района Negresco и Palais de la Méditerranée. Туристический офис указывает ресторан, аренду лежаков и зонтов, водные виды спорта и доступность для самостоятельного пользователя кресла.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-neptune">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Neptune</h3>
+      <p>Пляж в центральной части набережной, удобный для купания и прогулок. Зона находится рядом с другими популярными пляжами и городскими сервисами.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-forum">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Forum</h3>
+      <p>Центральный общественный пляж на Promenade des Anglais. В сезоне 2026 город включал Forum в список пляжей с сезонным наблюдением спасателей.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-voilier">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Voilier</h3>
+      <p>Пляж в центрально-западной части набережной. Подходит для обычного купания и отдыха у моря с быстрым доступом к Promenade des Anglais.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-florida">
+      <span class="tag">Публичный</span>
+      <h3>Florida Plage</h3>
+      <p>Пляж западнее центра Ниццы. Подходит для спокойного пляжного отдыха и прогулок по набережной вдали от наиболее туристической зоны центра.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-poincare">
+      <span class="tag">Публичный</span>
+      <h3>Plage du Poincaré</h3>
+      <p>Публичный пляж на западной части Promenade des Anglais. Город включал его в список пляжей с сезонным наблюдением спасателей в 2026 году.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-magnan">
+      <span class="tag">Публичный</span>
+      <h3>Plage de Magnan</h3>
+      <p>Пляж западной части Ниццы возле одноимённого района. В 2026 году город указывал Magnan среди пляжей с сезонным наблюдением.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-lenval">
+      <span class="tag">Публичный</span>
+      <h3>Plage de Lenval</h3>
+      <p>Пляж в западной части Promenade des Anglais. Город указывает его как один из двух пляжей Ниццы, доступных с собаками круглый год.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-fabron">
+      <span class="tag">Публичный</span>
+      <h3>Fabron Plage</h3>
+      <p>Пляж западнее центра, в районе Fabron. Подходит для отдыха у моря и прогулок по более спокойной части Promenade des Anglais.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-sainte-helene">
+      <span class="tag">Публичный</span>
+      <h3>Plage Sainte-Hélène</h3>
+      <p>Публичный пляж в западной части Ниццы. В сезоне 2026 город включал Sainte-Hélène в список пляжей с наблюдением спасателей.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-aubry-lecomte">
+      <span class="tag">Публичный</span>
+      <h3>Plage Aubry Lecomte</h3>
+      <p>Пляж западной части Ниццы вдоль Promenade des Anglais. Подходит для купания и спокойного отдыха у моря.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-carras">
+      <span class="tag">Публичный</span>
+      <h3>Plage de Carras</h3>
+      <p>Западный пляж Ниццы рядом с аэропортом. Здесь работает адаптированная зона для посетителей с ограниченной мобильностью; город указывает доступную инфраструктуру и сезонную помощь для купания.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-lanterne">
+      <span class="tag">Публичный</span>
+      <h3>Plage de la Lanterne</h3>
+      <p>Пляж на крайней западной части побережья, за портом Carras. Город указывает La Lanterne как один из двух пляжей Ниццы, доступных с собаками круглый год.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-regence">
+      <span class="tag">Концессия</span>
+      <h3>Régence Plage</h3>
+      <p>Концессионный пляж на Promenade des Anglais с пляжными услугами. Подходит тем, кто предпочитает организованный отдых с сервисом.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-canailles">
+      <span class="tag">Концессия</span>
+      <h3>Les Canailles Plage</h3>
+      <p>Частный концессионный пляж на Promenade des Anglais. Основной формат — организованный пляжный отдых с сервисом.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-cocoon">
+      <span class="tag">Концессия</span>
+      <h3>Cocoon Beach</h3>
+      <p>Концессионная пляжная зона на Promenade des Anglais. Предназначена для отдыха с пляжным сервисом и оборудованными местами.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-vela">
+      <span class="tag">Концессия</span>
+      <h3>La Véla Plage</h3>
+      <p>Концессионный пляж на Promenade des Anglais. Организованная зона отдыха у моря с пляжными услугами.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-hotel-amour">
+      <span class="tag">Концессия</span>
+      <h3>Hôtel Amour à la Plage</h3>
+      <p>Пляжная концессия Hôtel Amour на Promenade des Anglais. Формат сочетает пляжный отдых с ресторанно-лаунж атмосферой.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-n-plage">
+      <span class="tag">Концессия</span>
+      <h3>N la Plage (Negresco)</h3>
+      <p>Концессионная пляжная зона у отеля Negresco. Подходит для отдыха у моря в одной из самых известных центральных локаций Ниццы.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-blue-beach-plage">
+      <span class="tag">Концессия</span>
+      <h3>Blue Beach Plage</h3>
+      <p>Концессионная версия Blue Beach с пляжным сервисом, лежаками и зонтами. Официальный туристический офис также указывает ресторан и водные виды спорта.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-temps-ete">
+      <span class="tag">Концессия</span>
+      <h3>Le Temps d’un Été Plage</h3>
+      <p>Сезонная концессионная пляжная зона на Promenade des Anglais для организованного отдыха у моря.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-bocca-mar">
+      <span class="tag">Концессия</span>
+      <h3>Bocca Mar</h3>
+      <p>Концессионный пляж на Promenade des Anglais с организованным форматом отдыха и пляжным сервисом.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+    <article class="beach-detail" id="beach-galet">
+      <span class="tag">Концессия</span>
+      <h3>Le Galet Plage</h3>
+      <p>Центральная концессионная пляжная зона на Promenade des Anglais. Предлагает организованный отдых у моря и пляжные услуги.</p>
+      <a class="jump-back" href="#all-beach-details">↑ К списку пляжей</a>
+    </article>
+
+  </div>
+</section>
+
 </footer>
 
 <script>
